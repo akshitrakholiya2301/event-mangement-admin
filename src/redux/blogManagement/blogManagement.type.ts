@@ -1,0 +1,25 @@
+/**
+ * Action type for successful retrieval of all blogs List.
+ */
+export const GET_BLOGS_LIST_SUCCESS = "GET_BLOGS_LIST_SUCCESS";
+
+/**
+ * Action type for failed retrieval of all blogs List.
+ */
+export const GET_BLOGS_LIST_FAILURE = "GET_BLOGS_LIST_FAILURE";
+export const RESET_BLOG_LIST = "RESET_BLOG_LIST";
+
+
+export const DELETE_BLOG_SUCCESS = "DELETE_BLOG_SUCCESS";
+export const DELETE_BLOG_FAILURE = "DELETE_BLOG_FAILURE";
+
+export const UPDATE_BLOG_STATUS_SUCCESS = "UPDATE_BLOG_STATUS_SUCCESS";
+export const UPDATE_BLOG_STATUS_FAILURE = "UPDATE_BLOG_STATUS_FAILURE";
+
+export const APPROVE_REJECT_BLOG_SUCCESS = "APPROVE_REJECT_BLOG_SUCCESS";
+export const APPROVE_REJECT_BLOG_FAILURE = "APPROVE_REJECT_BLOG_FAILURE";
+
+export const ADD_EDIT_BLOG_SUCCESS = "ADD_EDIT_BLOG_SUCCESS";
+export const ADD_EDIT_BLOG_FAILURE = "ADD_EDIT_BLOG_FAILURE";
+
+

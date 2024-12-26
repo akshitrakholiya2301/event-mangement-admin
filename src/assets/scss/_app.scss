@@ -1,0 +1,1665 @@
+p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: $text_color;
+}
+
+h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23.4px;
+    color: $black_color;
+    margin-bottom: 10px;
+}
+
+ul {
+    &.icon-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27.2px;
+            padding-left: 30px;
+            color: $black_color;
+            position: relative;
+            margin-bottom: 10px;
+
+
+            &::before {
+                content: "\ec87";
+                font-family: 'techhive' !important;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                color: $primary_color;
+                font-size: 20px
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         Admin Authentication Start                         */
+/* -------------------------------------------------------------------------- */
+.admin-auth-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $background_color;
+
+    .admin-auth-inner-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px;
+        position: relative;
+        min-height: 100vh;
+
+        .auth-bg-one {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 700px;
+            height: 150px;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+        .auth-bg-two {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: 0% 80%;
+            }
+        }
+
+        .admin-auth-logo {
+            margin-bottom: 50px;
+
+            img {
+                width: 95px;
+                height: auto;
+            }
+        }
+
+        .admin-auth-from {
+            width: 100%;
+
+            .admin-auth-card {
+                width: 100%;
+                max-width: 480px;
+                margin: 0 auto;
+
+                .card-body {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .admin-auth-icon {
+                        width: 58px;
+                        height: 58px;
+                        font-size: 24px;
+                        color: #292D32;
+                        border: 1px solid $gray_color;
+                        border-radius: 9px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 17px;
+                    }
+
+                    .admin-auth-card-title {
+                        margin-bottom: 24px;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 36.4px;
+                            margin-bottom: 0px;
+                            color: $black_color;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 27.2px;
+                            margin-bottom: 0px;
+                            color: $text_color;
+
+                            a {
+                                color: $primary_color;
+
+                                &:hover {
+                                    color: $black_color;
+                                }
+                            }
+
+                            span {
+                                color: $black_color;
+
+                                &:hover {
+                                    color: $primary_color;
+                                }
+                            }
+                        }
+                    }
+
+                    .auth-form-text {
+
+                        margin-top: 20px;
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 27.2px;
+                            margin-bottom: 0px;
+                            color: $black_color;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 0 5px;
+
+                            a {
+                                color: $primary_color;
+
+                                &:hover {
+                                    color: $black_color;
+                                }
+                            }
+
+                            span {
+                                color: $black_color;
+
+                                &:hover {
+                                    color: $primary_color;
+                                }
+                            }
+                        }
+
+                        ul {
+                            list-style: none;
+                            padding-left: 0px;
+                            margin-bottom: 0px;
+
+                            li {
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 23.8px;
+                                color: #777F90;
+                                padding-left: 24px;
+                                position: relative;
+
+                                &::before {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    font-family: 'techhive' !important;
+                                    content: "\f075";
+                                }
+                            }
+                        }
+                    }
+
+                    .btn {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Admin Authentication End                          */
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Dashboard Start                              */
+/* -------------------------------------------------------------------------- */
+
+.main-content {
+    min-height: calc(100vh - 60px);
+
+    .page-content {
+        margin-top: 60px;
+        min-height: calc(100vh - 60px);
+        padding: 10px;
+
+        .page-content-wrapper {
+            height: 100%;
+            background-color: $white_color;
+            border-radius: 16px;
+            padding: 0px;
+            min-height: calc(100vh - 80px);
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    .page-title-left {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+
+        .page-title-text {
+            h2 {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 23.4px;
+                text-align: left;
+                color: $black_color;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .page-title-right {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+    }
+}
+
+.page-filter-wrapper {
+    padding: 20px;
+    padding-bottom: 0px;
+
+    .page-filter {
+        margin-bottom: 0px;
+    }
+}
+
+.page-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin-bottom: 20px;
+
+    .page-filter-left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0 10px;
+
+    }
+
+    .page-filter-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0 10px;
+
+    }
+}
+
+.page-breadcrumb {
+    padding: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Dashbaord End                               */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                           Donor management Start                           */
+/* -------------------------------------------------------------------------- */
+
+.donor-profile {
+    padding: 20px;
+
+    .donor-profile-card {
+        padding: 28px;
+        background-color: #F8F3FC;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .donor-details-card-left {
+            .donor-details-profile {
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+
+                .donor-details-text {
+                    h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 31.2px;
+                        text-align: left;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+        .donor-amt-card {
+            padding: 14px;
+            gap: 12px;
+            border-radius: 10px;
+            background-color: $white_color;
+            box-shadow: 0px -10px 20px 0px #0000001A;
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27.2px;
+                text-align: left;
+                color: $text_color;
+            }
+
+            .donor-amt-count {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h6 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 36.4px;
+                    text-align: left;
+                    color: $primary_color;
+                    margin-bottom: 0px;
+                }
+
+                .donor-amt-icon {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $primary_color;
+                    background-color: #F1E7F8;
+                }
+            }
+        }
+    }
+}
+
+.card-action {
+    .dropdown-toggle {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background-color: $gray_color;
+        color: $text_color;
+        border: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.charity-card {
+    .charity-card-title {
+        display: flex;
+        align-items: flex-start;
+
+        .charity-icon {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            border-radius: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.bg-red {
+                background-color: $secondary_color;
+                color: $white_color;
+            }
+
+            &.bg-yellow {
+                background-color: $warning_color;
+                color: $white_color;
+            }
+
+            &.bg-success {
+                background-color: $success_color;
+                color: $white_color;
+            }
+        }
+
+        .charity-text {
+            margin-left: 14px;
+            width: 100%;
+
+            .charity-text-action {
+                margin-bottom: 8px;
+
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 23.4px;
+                    text-align: left;
+                    color: $black_color;
+                    margin-bottom: 0px;
+                }
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23.8px;
+                text-align: left;
+                color: $text_color;
+                margin-bottom: 0px;
+
+            }
+
+            .charity-text-description {
+                min-height: 47px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23.8px;
+                text-align: left;
+                color: $text_color;
+                margin-bottom: 0px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .charity-card-details {
+        padding: 14px 0px;
+        border-bottom: 1px solid #E6EAEE;
+        display: flex;
+        flex-direction: column;
+        gap: 12px 0;
+
+        .per-month-charity {
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.52px;
+                text-align: left;
+                color: $primary_color;
+                margin-bottom: 0px;
+
+                img {
+                    width: 12px;
+                    height: 12px;
+                    min-width: 12px;
+                    margin-right: 8px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .admin-published {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20.4px;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+                gap: 0 5px;
+
+                &.published-date {
+                    color: $text_color;
+                }
+            }
+        }
+    }
+
+    .charity-target {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 14px;
+
+        .charity-target-item {
+            h6 {
+                color: $black_color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 18.2px;
+                margin-bottom: 0px;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20.4px;
+                color: $text_color;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.charity-tbl-user {
+    display: flex;
+    align-items: center;
+
+    .charity-user-icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary_color;
+        margin-right: 10px;
+
+        i {
+            color: $white_color;
+            font-size: 12px;
+        }
+
+        img {
+            width: 12px;
+            height: 21px;
+        }
+    }
+}
+
+.page-header {
+    width: 100%;
+    position: relative;
+
+    .page-cover-image {
+        position: relative;
+        width: 100%;
+        height: 190px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .page-back {
+        position: absolute;
+        left: 14px;
+        top: 20px;
+    }
+
+    .charity-all-fund {
+        position: absolute;
+        border-radius: 14px 14px 0px 0px;
+        background-color: $white_color;
+        border: 2px solid $primary_color;
+        border-bottom: 0px;
+        bottom: 43px;
+        right: 25px;
+        padding: 14px;
+        min-width: 265px;
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: $text_color;
+        }
+
+        .charity-all-fund-wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .charity-all-fund-left {
+                h5 {
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 36.4px;
+                    color: $primary_color;
+                    margin-bottom: 0px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27.2px;
+                    color: $secondary_color;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .charity-all-fund-right {
+                .charity-all-fund-icon {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 7px;
+                    padding: 10px;
+                    background-color: #F1E7F8;
+                    color: $primary_color;
+                }
+            }
+        }
+    }
+
+    .charity-details-profile {
+        margin-top: -43px;
+        padding: 0 20px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+
+        .charity-icon {
+            width: 86px;
+            height: 86px;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white_color;
+            background-color: $secondary_color;
+
+            img {
+                width: 45px;
+                height: 45px;
+            }
+
+            i {
+                font-size: 45px;
+                color: $white_color;
+            }
+        }
+
+        .update-cover {
+            margin-left: 25px;
+        }
+    }
+
+    .charity-details-profile-edit {
+        position: relative;
+        width: fit-content;
+    }
+}
+
+
+.single-charity-details {
+    padding: 0 20px;
+    position: relative;
+
+
+
+    .single-charity-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .single-charity-content-left {
+            .single-charity-text {
+                h2 {
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 36.4px;
+                    color: $black_color;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27.2px;
+                    color: $text_color;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .single-charity-content-right {
+            .single-charity-action-btn {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+            }
+        }
+    }
+}
+
+.charity-counter {
+
+    padding: 30px 20px;
+
+    .charity-counter-card {
+        border-radius: 4px;
+        border: 1px solid #E6EAEE;
+        background: rgba(241, 231, 248, 0.30);
+        display: flex;
+        align-items: center;
+
+        .charity-counter-item {
+            width: 25%;
+            padding: 14px;
+            border-right: 1px solid #E6EAEE;
+
+            p {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: $text_color;
+                margin-bottom: 10px;
+            }
+
+            h5 {
+
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 27.3px;
+                color: $black_color;
+                margin-bottom: 0px;
+                /* 130% */
+            }
+
+            &:last-child {
+                border-right: 0px;
+            }
+        }
+    }
+}
+
+.charity-table {
+    padding: 0px 20px;
+}
+
+.small-title {
+    margin-bottom: 16px;
+
+    h3 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20.8px;
+        color: $black_color;
+        margin-bottom: 0px;
+    }
+}
+
+.border-bottom {
+    border-color: $gray_color;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Donor management End                            */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                             Charity Form Start                             */
+/* -------------------------------------------------------------------------- */
+
+.create-charity-from {
+    padding: 20px;
+}
+
+.linked-blogs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.create-blog-row {
+    gap: 20px 0px;
+}
+
+.blogs-card {
+    border-radius: 7px;
+    border: 1px solid $gray_color;
+    overflow: hidden;
+    position: relative;
+
+    .blogs-image {
+
+        width: 100%;
+        height: 130px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .blogs-text {
+        padding: 12px;
+
+        h6 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18.2px;
+            text-align: left;
+            color: $black_color;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20.4px;
+            text-align: left;
+            margin-bottom: 0px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+        }
+    }
+
+    .blog-delete {
+        width: auto;
+        height: auto;
+        color: $white_color;
+        font-size: 17px;
+        line-height: 17px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+}
+
+.create-charity-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+}
+
+.tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags {
+    padding: 4px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.83px;
+    text-align: left;
+    color: $black_color;
+    background-color: #F1E7F8;
+    border-radius: 7px;
+
+}
+
+.chart-card {
+
+    .chart-details {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .chart-details-left {
+            display: flex;
+            align-items: center;
+            gap: 0 15px;
+        }
+    }
+
+    .chart-details-title {
+        h3 {
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 23.4px;
+            color: $black_color;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23.8px;
+            color: $text_color;
+            margin-bottom: 0px;
+        }
+    }
+
+    .chart-data {
+        display: flex;
+        align-items: flex-start;
+        gap: 0 10px;
+
+        .chart-data-text {
+            h4 {
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 27.3px;
+                color: $black_color;
+                margin-bottom: 0px;
+            }
+
+            p {
+
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 23.8px;
+                margin-bottom: 0px;
+                color: $text_color;
+            }
+        }
+    }
+
+    .main-chart {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+
+        .demo-chart {
+            height: 100%;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+
+            }
+        }
+    }
+}
+
+.requested-charity-details {
+    padding: 20px;
+
+    .requested-charity-details-text {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $gray_color;
+
+        h2 {
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36.4px;
+            color: $black_color;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: $text_color;
+            margin-bottom: 10px;
+        }
+
+        .btn-link {
+            padding: 0px;
+        }
+    }
+
+    .requested-your-impact {
+        padding-top: 30px;
+    }
+
+    .charity-user-details {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0px;
+
+        .charity-user-details-payment {
+            p {
+                margin-bottom: 0px
+            }
+
+            h2 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 31.2px;
+                color: $black_color;
+                margin-bottom: 0px;
+
+                span {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 23.8px;
+                    color: $text_color;
+                }
+            }
+        }
+
+        .charity-user-details-prtofile {
+            text-align: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 23.4px;
+                color: $black_color;
+            }
+        }
+
+        .charity-user-payment-date {
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 15px;
+
+                span {
+                    text-align: right;
+                    font-weight: 600;
+                    color: $black_color;
+                }
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+.grid-view {
+    .row {
+        gap: 20px 0px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Charity Form End                              */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Settings Start                               */
+/* -------------------------------------------------------------------------- */
+
+
+.admin-setting {
+    height: calc(100vh - 146px);
+
+    .tab-title {
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 31.2px;
+            color: $black_color;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: $text_color;
+        }
+    }
+
+    .button-group {
+        .btn {
+            min-width: 190px;
+            margin-top: 20px;
+        }
+    }
+
+    .change-password {
+        .button-group {
+            width: 100%;
+
+            .btn {
+                min-width: auto;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.admin-user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    margin-bottom: 30px;
+
+    .admin-user-profile-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        border: 1px solid $primary_color;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .admin-user-profile-details {
+        .admin-user-profile-name {
+            h4 {
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 27.3px;
+                color: $black_color;
+                margin-bottom: 12px;
+            }
+        }
+
+        .admin-user-profile-action {
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Settings End                                */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                            User Management Start                           */
+/* -------------------------------------------------------------------------- */
+
+.management-user-deatils {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .management-user-deatils-text {
+        h6 {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: $black_color;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20.4px;
+            color: $text_color;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             User Management End                            */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 Blogs Start                                */
+/* -------------------------------------------------------------------------- */
+.table-blog-deatils {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .table-blog-deatils-deatils-text {
+        h6 {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: $black_color;
+            margin-bottom: 3px;
+        }
+
+        p {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20.4px;
+            color: $text_color;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.add-blog-section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 30px;
+
+    .btn {
+        width: 100%;
+    }
+}
+
+.blog-details {
+    padding: 30px;
+
+
+    .blog-details-cover {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        border-radius: 14px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .blog-info-content {
+        margin: 0 auto;
+        padding: 30px 0px;
+        max-width: 860px;
+
+        .blog-content {
+            margin-top: 20px;
+
+            h1 {
+                color: var(--Black, #292D32);
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 17px;
+            }
+
+            h2 {
+                color: var(--Black, #292D32);
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 17px;
+            }
+
+            h3 {
+                color: var(--Black, #292D32);
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 17px;
+            }
+
+            h4 {
+                color: var(--Black, #292D32);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 17px;
+            }
+
+            h5 {
+                color: var(--Black, #292D32);
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 17px;
+            }
+
+            h6 {
+                color: var(--Black, #292D32);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 17px;
+            }
+
+            p {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30.6px;
+                color: $text_color;
+                margin-bottom: 17px;
+            }
+
+            .blog-content-image {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 17px;
+                margin-bottom: 17px;
+
+                .blog-content-image-wrapper {
+                    width: 100%;
+                    height: 280px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 7px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .blog-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .blog-info-right,
+        .blog-info-left {
+            display: flex;
+            align-items: center;
+            gap: 0 12px;
+        }
+
+        .blog-info-tag {
+            padding: 6px 18px;
+            background-color: #F1E7F8;
+            color: #23356E;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23.8px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .blog-info-date-like {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: $text_color;
+
+            span {
+                color: $gray_color;
+            }
+        }
+
+        .blog-info-icon {
+            display: flex;
+            align-items: center;
+            gap: 0 12px;
+        }
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  Blogs End                                 */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* --------------------------- bg icon with shape --------------------------- */
+.suqare-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+
+    i {
+        font-size: 20px;
+
+    }
+}
+
+.round-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+
+    i {
+        font-size: 20px;
+
+    }
+}
+
+.icon-light-primary {
+    background-color: #F2F6FF;
+    color: $primary_color;
+    border-color: #F2F6FF;
+}
+
+.icon-primary {
+    background-color: $primary_color;
+    color: $white_color;
+    border-color: $primary_color;
+}
+
+.icon-white {
+    background-color: $gray_color;
+    color: $black_color;
+    border-color: $gray_color;
+
+    &:hover {
+        background-color: $primary_color;
+        color: $white_color;
+        border-color: $primary_color;
+    }
+}
+
+/* --------------------------- bg icon with shape --------------------------- */
+
+
+/* ----------------------------- No record Found ---------------------------- */
+.no-record-found {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    .no-record-found-image {
+
+        img {
+            width: 450px;
+            height: auto;
+        }
+    }
+
+    .no-record-found-text {
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46.8px;
+            text-align: center;
+            color: $black_color;
+            margin-bottom: 20px;
+        }
+
+        p {
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px;
+            text-align: center;
+            color: $text_color;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* ----------------------------- No record Found ---------------------------- */
+
+
+.error-page-content {
+    width: 100%;
+    height: 100vh;
+    padding: 25px;
+    background-color: #faf8f6;
+
+    .error-page-content-wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: $white_color;
+        border-radius: 16px;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .error-wrapper {
+        max-width: 450px;
+        margin: 0 auto;
+
+
+        .error-image {
+            width: 100%;
+            height: 370px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .error-image-details {
+            text-align: center;
+
+            h2 {
+
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 46.8px;
+                text-align: center;
+                color: $black_color;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27.2px;
+                text-align: center;
+                margin-bottom: 20px;
+                color: $text_color;
+            }
+
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+}
